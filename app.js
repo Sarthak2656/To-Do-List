@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const date = require(__dirname + "/date.js");
 const mongoose=require("mongoose");
 const app = express();
-require('dotenv').config();
+//require('dotenv').config();
 mongoose.connect("mongodb+srv://"+process.env.user_pwd+"@cluster0.075skmj.mongodb.net/todolistDB");
 app.set('view engine', 'ejs');
 const _=require("lodash");
